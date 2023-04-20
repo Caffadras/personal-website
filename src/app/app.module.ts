@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './components/main/main.component';
+import { LayoutComponent } from './components/layout/layout.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
 import { NgOptimizedImage } from '@angular/common';
 import { MatRippleModule } from '@angular/material/core';
@@ -13,17 +13,19 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { GreetingsSectionComponent } from './components/greetings-section/greetings-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
+    LayoutComponent,
     ClickOutsideDirective,
     NavbarComponent,
     HeroSectionComponent,
     GreetingsSectionComponent,
     FooterComponent,
     SkillsSectionComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule,

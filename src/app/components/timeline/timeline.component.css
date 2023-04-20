@@ -1,0 +1,7 @@
+.timeline {
+  background-image: linear-gradient(180deg,#f3f4f6 0,#4f5c5c 30px,#4f5c5c calc(100% - 30px),#f3f4f6);
+}
+
+.myclass{
+  animation: cd-bounce-2-inverse .6s;
+}
