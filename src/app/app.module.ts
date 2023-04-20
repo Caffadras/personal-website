@@ -9,6 +9,10 @@ import { MatRippleModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { GreetingsSectionComponent } from './components/greetings-section/greetings-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MainComponent,
     ClickOutsideDirective,
     NavbarComponent,
+    HeroSectionComponent,
+    GreetingsSectionComponent,
+    FooterComponent,
+    SkillsSectionComponent,
   ],
   imports: [
     BrowserModule,
