@@ -14,6 +14,7 @@ import { GreetingsSectionComponent } from './components/greetings-section/greeti
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { InViewDirective } from './directives/in-view.directive';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     FooterComponent,
     SkillsSectionComponent,
     TimelineComponent,
+    InViewDirective,
   ],
   imports: [
     BrowserModule,
