@@ -1,13 +1,16 @@
-<div class="flex justify-center bg-gray-100 px-10 pb-[10rem] pt-20 font-rubik">
+<div
+  id="timeline"
+  class="flex justify-center bg-gray-100 px-2 pb-[10rem] pt-20 font-rubik md:px-10"
+>
   <div class="max-w-screen-xl">
     <div class="mb-10 text-center text-4xl">My projects and experience</div>
 
-    <div class="relative m-8 py-20">
+    <div class="relative m-8 my-8 py-20">
       <div
         class="timeline absolute left-0 top-0 h-full w-1 bg-gray-400 xl:left-1/2"
       ></div>
 
-      <div class="relative mb-8 xl:mb-16">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -21,16 +24,16 @@
           />
         </div>
         <div
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:max-w-[40%]"
           [@bounceIn]="scrolledIntoView[1] ? animationType : 'void'"
           appInView
           (inView)="onInView('1')"
         >
           <h3 class="mb-3 text-3xl font-medium">Personal website</h3>
           <p class="text-xl text-gray-600">
-            This personal website (the one you are currently on) is a nice
-            addition to my portfolio. It was built with angular and tailwind. I
-            aim to keep the website up-to-date with my latest achievements.
+            This website (the one you are currently on) is a nice addition to my
+            portfolio. It was built with angular and tailwind. I aim to keep the
+            website up-to-date with my latest achievements.
           </p>
           <p
             class="mt-5 text-lg text-gray-500 xl:absolute xl:-right-56 xl:top-0"
@@ -40,7 +43,7 @@
         </div>
       </div>
 
-      <div class="relative mb-8 xl:mb-16 xl:flex xl:justify-end">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:flex xl:justify-end xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -56,7 +59,7 @@
           [@bounceIn]="scrolledIntoView[2] ? 'fromRight' : 'void'"
           appInView
           (inView)="onInView('2')"
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
         >
           <h3 class="mb-3 text-3xl font-medium">Home server</h3>
           <p class="text-xl text-gray-600">
@@ -72,7 +75,7 @@
         </div>
       </div>
 
-      <div class="relative mb-8 xl:mb-16">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -86,7 +89,7 @@
           />
         </div>
         <div
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:max-w-[40%]"
           [@bounceIn]="scrolledIntoView[3] ? animationType : 'void'"
           appInView
           (inView)="onInView('3')"
@@ -112,7 +115,7 @@
         </div>
       </div>
 
-      <div class="relative mb-8 xl:mb-16 xl:flex xl:justify-end">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:flex xl:justify-end xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -129,7 +132,7 @@
           [@bounceIn]="scrolledIntoView[4] ? 'fromRight' : 'void'"
           appInView
           (inView)="onInView('4')"
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
         >
           <h3 class="mb-3 text-3xl font-medium">Telegram bot</h3>
           <p class="text-xl text-gray-600">
@@ -147,7 +150,7 @@
         </div>
       </div>
 
-      <div class="relative mb-8 xl:mb-16">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -163,7 +166,7 @@
           [@bounceIn]="scrolledIntoView[5] ? animationType : 'void'"
           appInView
           (inView)="onInView('5')"
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:max-w-[40%]"
         >
           <h3 class="mb-3 text-3xl font-medium">Intership</h3>
           <p class="text-xl text-gray-600">
@@ -180,7 +183,7 @@
         </div>
       </div>
 
-      <div class="relative mb-8 xl:mb-16 xl:flex xl:justify-end">
+      <div class="relative mb-8 pr-6 xl:mb-16 xl:flex xl:justify-end xl:pr-0">
         <div
           class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
         >
@@ -196,7 +199,7 @@
           [@bounceIn]="scrolledIntoView[6] ? 'fromRight' : 'void'"
           appInView
           (inView)="onInView('6')"
-          class="relative ml-16 rounded-lg border-2 border-accent_light bg-white p-4 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
+          class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:ml-0 xl:mr-16 xl:max-w-[40%]"
         >
           <h3 class="mb-3 text-3xl font-medium">College</h3>
           <p class="text-xl text-gray-600">

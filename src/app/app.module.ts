@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { InViewDirective } from './directives/in-view.directive';
+import { NgParticlesModule } from 'ng-particles';
+import { HeroParticlesComponent } from './components/hero-particles/hero-particles.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { InViewDirective } from './directives/in-view.directive';
     SkillsSectionComponent,
     TimelineComponent,
     InViewDirective,
+    HeroParticlesComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { InViewDirective } from './directives/in-view.directive';
     NgOptimizedImage,
     MatRippleModule,
     RouterOutlet,
+    NgParticlesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

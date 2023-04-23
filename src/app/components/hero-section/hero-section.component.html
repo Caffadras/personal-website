@@ -1,45 +1,123 @@
-<div>
+<div class="relative">
+  <app-hero-particles></app-hero-particles>
+
   <div
-    class="flex h-screen items-center justify-center bg-gray-200 px-5 font-rubik lg:px-20"
+    class="flex h-screen items-center justify-center px-5 font-rubik lg:px-20"
   >
     <div class="flex flex-wrap items-center justify-around gap-x-48 gap-y-10">
       <img
-        class="h-48 w-48 rounded-full border-8 border-gray-600 object-cover sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96"
-        src=""
+        class="h-48 w-48 rounded-full object-cover sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96"
+        src="assets/images/me.png"
         alt="Dubrovschii Semion"
       />
 
       <div class="space-y-4 text-center xl:text-left">
         <p class="text-4xl sm:text-5xl md:text-6xl">Dubrovschii Semion</p>
-        <p class="text-xl text-gray-400 sm:text-2xl">
+        <div
+          class="flex flex-wrap justify-center gap-4 text-xl text-gray-400 sm:text-2xl"
+        >
           Full Stack Developer (Java + Angular)
-        </p>
+          <ul class="flex items-center justify-center gap-6">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/semion-dubrovschii-30b160231/"
+                title="https://www.linkedin.com/in/semion-dubrovschii-30b160231/"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">LinkedIn</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 18 18"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.0142 0.965088H2.51824C1.92097 0.965088 1.34816 1.20235 0.925831 1.62468C0.503499 2.04702 0.266235 2.61982 0.266235 3.21709V14.7131C0.266235 15.3104 0.503499 15.8832 0.925831 16.3055C1.34816 16.7278 1.92097 16.9651 2.51824 16.9651H14.0142C14.6115 16.9651 15.1843 16.7278 15.6066 16.3055C16.029 15.8832 16.2662 15.3104 16.2662 14.7131V3.21709C16.2662 2.61982 16.029 2.04702 15.6066 1.62468C15.1843 1.20235 14.6115 0.965088 14.0142 0.965088ZM5.60024 13.7491C5.60024 13.7891 5.57324 13.8491 5.52024 13.9301C5.44024 13.9841 5.37924 14.0101 5.33924 14.0101H3.48924C3.44924 14.0101 3.38924 13.9841 3.30924 13.9301C3.25524 13.8501 3.22824 13.7901 3.22824 13.7491V7.25509C3.22824 7.21509 3.25524 7.15509 3.30824 7.07509C3.38824 7.02109 3.44824 6.99409 3.48924 6.99409H5.33924C5.37924 6.99409 5.43924 7.02109 5.51924 7.07409C5.57324 7.15409 5.60024 7.21409 5.60024 7.25509V13.7491ZM5.29924 5.88809C5.18426 6.00567 5.04642 6.09845 4.89421 6.16071C4.742 6.22297 4.57865 6.25339 4.41424 6.25009C4.06524 6.25009 3.77124 6.13009 3.52924 5.88809C3.41161 5.77315 3.31879 5.63532 3.25653 5.4831C3.19427 5.33088 3.16388 5.16751 3.16724 5.00309C3.16724 4.66809 3.28824 4.38009 3.52924 4.13909C3.64292 4.01844 3.78007 3.92231 3.93226 3.85661C4.08445 3.79091 4.24847 3.75701 4.41424 3.75701C4.58 3.75701 4.74402 3.79091 4.89621 3.85661C5.0484 3.92231 5.18555 4.01844 5.29924 4.13909C5.53924 4.37909 5.66024 4.66909 5.66024 5.00309C5.66024 5.35209 5.54024 5.64709 5.29924 5.88809ZM13.4612 13.7491C13.4609 13.7831 13.4537 13.8167 13.4399 13.8478C13.4262 13.879 13.4062 13.907 13.3812 13.9301C13.3581 13.955 13.3301 13.975 13.299 13.9888C13.2679 14.0025 13.2343 14.0098 13.2002 14.0101H11.3102C11.2702 14.0101 11.2102 13.9841 11.1302 13.9301C11.0762 13.8501 11.0492 13.7901 11.0492 13.7491V9.78909C11.0492 9.45309 10.9892 9.19209 10.8682 9.00409C10.7202 8.84409 10.4792 8.76409 10.1442 8.76409C9.71524 8.76409 9.40724 8.89009 9.21924 9.14509C9.04524 9.40009 8.95824 9.76209 8.95824 10.2311V13.7491C8.95792 13.7831 8.95066 13.8167 8.93691 13.8478C8.92315 13.879 8.90319 13.907 8.87824 13.9301C8.85498 13.9552 8.82683 13.9752 8.79553 13.989C8.76423 14.0027 8.73043 14.0099 8.69624 14.0101H6.84624C6.80624 14.0101 6.74623 13.9841 6.66623 13.9301C6.61224 13.8501 6.58624 13.7901 6.58624 13.7491V7.25509C6.58624 7.21509 6.61224 7.15509 6.66623 7.07509C6.74623 7.02109 6.80624 6.99409 6.84624 6.99409H8.63624C8.69024 6.99409 8.74323 7.00709 8.79624 7.03409C8.82423 7.04809 8.85124 7.09409 8.87724 7.17409V7.27509L8.89723 7.31509V7.47609C9.34023 7.04809 9.95024 6.83309 10.7272 6.83309C11.5982 6.83309 12.2682 7.04109 12.7372 7.45609C13.2202 7.89809 13.4612 8.53609 13.4612 9.36609V13.7491Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/Caffadras"
+                title="https://github.com/Caffadras"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">GitHub</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:dubrovschiisemion@gmail.com"
+                target="_blank"
+                title="dubrovschiisemion@gmail.com"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Gmail</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.954,5.542,15.536,13.96a5.007,5.007,0,0,1-7.072,0L.046,5.542C.032,5.7,0,5.843,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6C24,5.843,23.968,5.7,23.954,5.542Z"
+                  />
+                  <path
+                    d="M14.122,12.546l9.134-9.135A4.986,4.986,0,0,0,19,1H5A4.986,4.986,0,0,0,.744,3.411l9.134,9.135A3.007,3.007,0,0,0,14.122,12.546Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div class="flex justify-center space-x-4 text-lg xl:justify-normal">
           <a
-            class="group relative inline-block overflow-hidden rounded-lg border border-base_dark px-2 py-3 focus:outline-none sm:px-8"
-            href="/download"
+            class="group relative inline-block overflow-hidden scroll-smooth rounded-lg border border-base_dark bg-white px-2 py-3 focus:outline-none sm:px-8"
+            href="#timeline"
           >
             <span
               class="absolute inset-y-0 left-0 w-0 bg-base_light transition-all group-hover:w-full group-active:bg-base_light"
             ></span>
 
             <span
-              class="relative font-medium text-base_dark transition-colors group-hover:text-white"
+              class="relative bg-transparent bg-transparent font-medium transition-colors group-hover:text-white"
             >
               View Portfolio
             </span>
           </a>
 
           <a
-            class="group relative inline-block overflow-hidden rounded-lg border border-base_dark px-2 py-3 focus:outline-none focus:ring sm:px-8"
-            href="/download"
+            class="group relative inline-block overflow-hidden rounded-lg border border-base_dark bg-white px-2 py-3 focus:outline-none focus:ring sm:px-8"
+            href="assets/resume/Dubrovschii%20Semion%20CV.pdf"
+            download
           >
             <span
               class="absolute inset-y-0 left-0 w-0 bg-base_light transition-all group-hover:w-full group-active:bg-base_light"
             ></span>
 
             <span
-              class="relative font-medium text-base_dark transition-colors group-hover:text-white"
+              class="relative bg-transparent font-medium text-base_dark transition-colors group-hover:text-white"
             >
               Download resume
             </span>
