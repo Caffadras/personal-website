@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      screens: {
+        xs: "384px",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],

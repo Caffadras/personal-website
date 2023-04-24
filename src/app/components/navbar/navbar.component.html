@@ -1,9 +1,11 @@
-<header class="fixed top-0 z-10 w-full bg-base_dark py-2 font-poppins lg:py-3">
+<header
+  class="fixed top-0 z-10 w-full bg-base_dark font-poppins sm:py-2 lg:py-3"
+>
   <div class="flex items-center justify-between text-2xl">
     <a href="/">
       <div
         [@logoAnimation]="'*'"
-        class="ml-5 flex flex-wrap gap-2 text-2xl font-medium text-white sm:text-3xl"
+        class="ml-2 flex flex-wrap gap-2 text-lg font-medium text-white xs:ml-5 xs:text-2xl sm:text-3xl"
       >
         <div class="flex items-center">
           <img
@@ -11,7 +13,7 @@
             alt="D"
             height="40"
             width="40"
-            class="mr-1"
+            class="mr-1 h-7 w-7 sm:h-10 sm:w-10"
           />
           <span>ubrovschii</span>
         </div>
@@ -21,11 +23,11 @@
 
     <ng-template #navlinks>
       <ul class="text-white lg:flex lg:gap-4 xl:gap-10">
-        <li>
+        <li (click)="scrollToAnchor('about', 100)">
           <a
-            href="#about"
             class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
-            ><img
+          >
+            <img
               ngSrc="assets/icons/svg/about.svg"
               alt="about"
               height="20"
@@ -33,11 +35,11 @@
             /><span class="ml-3">About</span>
           </a>
         </li>
-        <li>
+        <li (click)="scrollToAnchor('skills', 100)">
           <a
-            href="#skills"
             class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
-            ><img
+          >
+            <img
               ngSrc="assets/icons/svg/portfolio.svg"
               alt="portfolio"
               height="20"
@@ -45,9 +47,8 @@
             /><span class="ml-3">Skills</span>
           </a>
         </li>
-        <li>
+        <li (click)="scrollToAnchor('timeline', 100)">
           <a
-            href="#timeline"
             class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
             ><img
               ngSrc="assets/icons/svg/work-experience.svg"
@@ -61,7 +62,7 @@
     </ng-template>
 
     <nav
-      class="ml-[1rem] flex rounded-l-full bg-base_light py-1 pl-5 pr-3 sm:py-2 sm:pl-8"
+      class="flex rounded-l-full py-1 pl-5 pr-3 xs:ml-[1rem] sm:py-2 sm:pl-8 lg:bg-base_light"
       [@navLinksAnimation]="'*'"
     >
       <div class="hidden pr-[1rem] text-[27px] lg:block lg:pl-3 xl:pl-8">

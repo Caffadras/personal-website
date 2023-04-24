@@ -2,49 +2,11 @@
   id="skills"
   class="mx-auto break-words bg-white px-[3rem] py-[2rem] text-center font-rubik md:py-[5rem] xl:max-w-screen-xl"
 >
-  <div class="text-6xl">Skills and Tools?</div>
+  <div class="text-5xl">Skills and Tools</div>
   <div
-    class="mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
-  >
-    <div class="flex flex-wrap items-center justify-around">
-      <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
-        <img
-          ngSrc="https://cdn-icons-png.flaticon.com/128/2351/2351619.png"
-          width="50"
-          height="50"
-          alt=""
-        />
-        <div class="ml-2 text-4xl font-medium">Database</div>
-      </div>
-
-      <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
-        T-SQL, PL/SQL, Isolation levels, ACID, Normal forms
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="ml-auto mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
-  >
-    <div class="flex flex-wrap-reverse items-center justify-around">
-      <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
-        Test Driven Development, Continuous Integration, Agile Methodologies,
-        REST, SOAP
-      </div>
-
-      <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
-        <img
-          ngSrc="https://cdn-icons-png.flaticon.com/128/4288/4288807.png"
-          width="50"
-          height="50"
-          alt=""
-        />
-        <div class="ml-2 text-4xl font-medium">Practices</div>
-      </div>
-    </div>
-  </div>
-
-  <div
+    [@skillsAnimation]="scrolledIntoView[1] ? 'fromLeft' : 'void'"
+    appInView
+    (inView)="onInView(1)"
     class="mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
   >
     <div class="flex flex-wrap items-center justify-around">
@@ -66,11 +28,14 @@
   </div>
 
   <div
+    [@skillsAnimation]="scrolledIntoView[2] ? 'fromRight' : 'void'"
+    appInView
+    (inView)="onInView(2)"
     class="ml-auto mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
   >
     <div class="flex flex-wrap-reverse items-center justify-around">
       <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
-        Spring MVC, Spring boot, Spring security, Spring data
+        Spring MVC, Spring boot, Spring security, Spring data, Spring AMQP
       </div>
 
       <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
@@ -81,6 +46,76 @@
           alt=""
         />
         <div class="ml-2 text-4xl font-medium">Spring</div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    [@skillsAnimation]="scrolledIntoView[3] ? 'fromLeft' : 'void'"
+    appInView
+    (inView)="onInView(3)"
+    class="mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
+  >
+    <div class="flex flex-wrap items-center justify-around">
+      <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
+        <img
+          ngSrc="https://cdn-icons-png.flaticon.com/128/2351/2351619.png"
+          width="50"
+          height="50"
+          alt=""
+        />
+        <div class="ml-2 text-4xl font-medium">Database</div>
+      </div>
+
+      <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
+        Postgresql, Jpa, Hibernate, Flyway, Isolation levels, ACID, Normal forms
+      </div>
+    </div>
+  </div>
+
+  <div
+    [@skillsAnimation]="scrolledIntoView[4] ? 'fromRight' : 'void'"
+    appInView
+    (inView)="onInView(4)"
+    class="ml-auto mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
+  >
+    <div class="flex flex-wrap-reverse items-center justify-around">
+      <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
+        HTML, CSS, Tailwindcss, TypeScript, Angular
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
+        <img
+          ngSrc="assets/icons/svg/angular.svg"
+          width="50"
+          height="50"
+          alt=""
+        />
+        <div class="ml-2 text-4xl font-medium">Frontend</div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    [@skillsAnimation]="scrolledIntoView[5] ? 'fromLeft' : 'void'"
+    appInView
+    (inView)="onInView(5)"
+    class="mt-10 w-full max-w-screen-lg rounded-xl border-2 border-accent_light p-2 md:p-5"
+  >
+    <div class="flex flex-wrap items-center justify-around">
+      <div class="flex flex-wrap items-center justify-center pr-5 md:w-1/4">
+        <img
+          ngSrc="https://cdn-icons-png.flaticon.com/128/4288/4288807.png"
+          width="50"
+          height="50"
+          alt=""
+        />
+        <div class="ml-2 text-4xl font-medium">Practices</div>
+      </div>
+
+      <div class="mt-4 text-2xl md:mt-0 md:w-3/4">
+        Test Driven Development, Continuous Integration, Agile Methodologies,
+        REST, SOAP
       </div>
     </div>
   </div>
