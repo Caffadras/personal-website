@@ -8,13 +8,15 @@
       class="flex flex-wrap items-center justify-around gap-x-48 gap-y-3 xs:gap-y-10"
     >
       <img
-        class="h-48 w-48 rounded-full object-cover sm:h-64 sm:w-64 md:h-80 md:w-80"
+        class="h-36 w-36 rounded-full object-cover xs:h-48 xs:w-48 sm:h-64 sm:w-64 md:h-80 md:w-80"
         src="assets/images/me.png"
         alt="Dubrovschii Semion"
       />
 
       <div class="space-y-4 text-center xl:text-left">
-        <p class="text-4xl sm:text-5xl md:text-6xl">Dubrovschii Semion</p>
+        <p class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl">
+          Dubrovschii Semion
+        </p>
         <div
           class="flex flex-wrap justify-center gap-4 text-xl text-gray-400 sm:text-2xl"
         >
@@ -93,17 +95,19 @@
           </ul>
         </div>
 
-        <div class="flex justify-center space-x-4 text-lg xl:justify-normal">
+        <div
+          class="flex justify-center space-x-4 text-sm xs:text-lg xl:justify-normal"
+        >
           <a
-            class="group relative inline-block overflow-hidden scroll-smooth rounded-lg border border-base_dark bg-white px-2 py-3 focus:outline-none sm:px-8"
-            href="#timeline"
+            (click)="scrollToAnchor('timeline', 100)"
+            class="group relative inline-block cursor-pointer select-none overflow-hidden scroll-smooth rounded-lg border border-base_dark bg-white px-2 py-3 focus:outline-none sm:px-8"
           >
             <span
               class="absolute inset-y-0 left-0 w-0 bg-base_light transition-all group-hover:w-full group-active:bg-base_light"
             ></span>
 
             <span
-              class="relative bg-transparent bg-transparent font-medium transition-colors group-hover:text-white"
+              class="relative bg-transparent font-medium transition-colors group-hover:text-white"
             >
               View Portfolio
             </span>

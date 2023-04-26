@@ -25,7 +25,7 @@
       <ul class="text-white lg:flex lg:gap-4 xl:gap-10">
         <li (click)="scrollToAnchor('about', 100)">
           <a
-            class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
+            class="flex cursor-pointer select-none items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
           >
             <img
               ngSrc="assets/icons/svg/about.svg"
@@ -37,7 +37,7 @@
         </li>
         <li (click)="scrollToAnchor('skills', 100)">
           <a
-            class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
+            class="flex cursor-pointer select-none items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
           >
             <img
               ngSrc="assets/icons/svg/portfolio.svg"
@@ -49,7 +49,7 @@
         </li>
         <li (click)="scrollToAnchor('timeline', 100)">
           <a
-            class="flex items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
+            class="flex cursor-pointer select-none items-center px-4 py-2 text-gray-200 transition duration-300 hover:bg-base_light lg:rounded-full lg:hover:bg-accent_light"
             ><img
               ngSrc="assets/icons/svg/work-experience.svg"
               alt="experience"
@@ -78,14 +78,14 @@
           appClickOutside
           (clickOutside)="onClickedOutside()"
         >
-          <button>
+          <a>
             <img
               ngSrc="assets/icons/svg/menu.svg"
               alt=""
-              height="35"
-              width="35"
+              width="30"
+              height="30"
             />
-          </button>
+          </a>
         </div>
 
         <div

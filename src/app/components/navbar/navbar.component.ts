@@ -3,7 +3,7 @@ import { dropdownAnimation } from '../../animations/dropdown-animation';
 import { logoAnimation } from '../../animations/logo-animation';
 import { navLinksAnimation } from '../../animations/navLinksAnimation';
 import { AnimationEvent } from '@angular/animations';
-import { ViewportScroller } from '@angular/common';
+import { ScrollingService } from '../../services/scrolling.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,7 +18,7 @@ export class NavbarComponent {
 
   constructor(
     private cdr: ChangeDetectorRef,
-    private viewportScroller: ViewportScroller
+    private scrollingService: ScrollingService
   ) {}
 
   toggleDropdown() {
@@ -42,14 +42,6 @@ export class NavbarComponent {
   }
 
   scrollToAnchor(anchorId: string, offset: number = 0): void {
-    setTimeout(() => {
-      const anchorElement = document.getElementById(anchorId);
-      if (anchorElement) {
-        const rect = anchorElement.getBoundingClientRect();
-        const top =
-          rect.top + this.viewportScroller.getScrollPosition()[1] - offset;
-        this.viewportScroller.scrollToPosition([0, top]);
-      }
-    }, 100);
+    this.scrollingService.scrollToAnchor(anchorId, offset);
   }
 }
