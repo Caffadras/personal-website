@@ -1,34 +1,21 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { bounceIn } from '../../animations/bounceIn';
+import { Component, OnInit } from '@angular/core';
+import { TimelineEvent } from '../../domain/TimelineEvent';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css'],
-  animations: [bounceIn],
 })
 export class TimelineComponent implements OnInit {
-  animationType: string = 'void';
-  scrolledIntoView: { [key: string]: boolean } = {};
+  timelineEvents: TimelineEvent[] = [];
+
+  constructor(private httpClient: HttpClient) {}
   ngOnInit(): void {
-    this.updateAnimationFormat();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.updateAnimationFormat();
-  }
-
-  private updateAnimationFormat() {
-    if (window.innerWidth < 1280) {
-      this.animationType = 'fromRight';
-    } else {
-      this.animationType = 'fromLeft';
-    }
-  }
-
-  onInView(id: string) {
-    this.scrolledIntoView[id] = true;
-    this.updateAnimationFormat();
+    this.httpClient
+      .get<TimelineEvent[]>('/assets/data/events.json')
+      .subscribe((data: TimelineEvent[]) => {
+        this.timelineEvents = data;
+      });
   }
 }

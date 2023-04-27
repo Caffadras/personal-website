@@ -1,0 +1,40 @@
+<article
+  [ngClass]="{ 'xl:flex xl:justify-end': rightSidePosition }"
+  class="relative mb-8 pr-6 xl:mb-16 xl:flex xl:justify-end xl:pr-0"
+>
+  <div
+    [@bounce]="scrolledIntoView ? 'inPlace' : 'void'"
+    aria-label="Event icon"
+    class="absolute -left-[30px] top-0 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent_light bg-white xl:left-[50%] xl:ml-[-30px]"
+  >
+    <img
+      ngSrc="{{ event.icon }}"
+      alt=" {{ event.title + ' icon' }}"
+      height="28"
+      width="28"
+      priority
+    />
+  </div>
+  <div
+    [ngClass]="{ 'xl:ml-0 xl:mr-16': rightSidePosition }"
+    class="relative ml-12 w-full rounded-lg border-2 border-accent_light bg-white p-4 md:ml-16 xl:max-w-[40%]"
+    [@bounce]="getAnimationType()"
+    appInView
+    (inView)="onInView()"
+  >
+    <h3 class="mb-3 text-3xl font-medium">{{ event.title }}</h3>
+    <p class="text-xl text-gray-600">
+      {{ event.description }}
+    </p>
+    <p
+      [ngClass]="
+        rightSidePosition
+          ? 'xl:-left-[33rem] xl:text-right'
+          : 'xl:-right-[33rem]'
+      "
+      class="mt-5 text-lg text-gray-500 xl:absolute xl:top-0 xl:w-96"
+    >
+      {{ event.date }}
+    </p>
+  </div>
+</article>

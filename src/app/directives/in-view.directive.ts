@@ -27,7 +27,7 @@ export class InViewDirective implements OnInit, OnDestroy {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.4,
       }
     );
 

@@ -17,6 +17,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { InViewDirective } from './directives/in-view.directive';
 import { NgParticlesModule } from 'ng-particles';
 import { HeroParticlesComponent } from './components/hero-particles/hero-particles.component';
+import { TimelineCardComponent } from './components/timeline-card/timeline-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { HeroParticlesComponent } from './components/hero-particles/hero-particl
     TimelineComponent,
     InViewDirective,
     HeroParticlesComponent,
+    TimelineCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { HeroParticlesComponent } from './components/hero-particles/hero-particl
     MatRippleModule,
     RouterOutlet,
     NgParticlesModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

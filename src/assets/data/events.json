@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Personal Website",
+    "description": "This website (the one you are currently on) is a nice addition to my portfolio. It was built with angular and tailwind. I aim to keep the website up-to-date with my latest achievements.",
+    "date": "April 2023",
+    "icon": "assets/icons/svg/logo-black.svg"
+  },
+  {
+    "title": "Home server",
+    "description": "I decided to turn my old computer into a home server. It is running proxmox with an ubuntu server virtual machine. This website is also hosted on my home server.",
+    "date": "April 2023",
+    "icon": "assets/icons/svg/network.svg"
+  },
+  {
+    "title": "Chatio",
+    "description": "Chatio is a full-stack application built with a spring backend and angular frontend. It is a simple chat app that utilizes mainly web socket connections. In the near future, I will deploy it on my server and you will be able to try it out. But right now you can see code",
+    "date": "March 2023",
+    "icon": "assets/icons/svg/comment-alt.svg"
+  },
+  {
+    "title": "Telegram bot",
+    "description": "I wanted to make a telegram bot in Java for students in my college. It parses the college website and generates a pdf report based and your grades. Decided not to polish this bot because my college website did not publish all grades for some reason, so the pdf reports were not very accurate.",
+    "date": "January 2023",
+    "icon": "assets/images/telegram.png"
+  },
+  {
+    "title": "Intership",
+    "description": "During my internship at Endava, I worked on a REST API for a ‘Budget planner’ application using Spring. As part of the development team, designed and implemented various endpoints for the API, including login system and budget management.",
+    "date": "September 2022 - December 2022",
+    "icon": "assets/icons/svg/portfolio-black.svg"
+  },
+  {
+    "title": "College",
+    "description": "Although I studied programming before, here I started to do it more seriously. I managed to try myself in c++, c#, but most of all I liked Java.",
+    "date": "2020 - 2024",
+    "icon": "assets/icons/svg/graduation-cap.svg"
+  }
+]
